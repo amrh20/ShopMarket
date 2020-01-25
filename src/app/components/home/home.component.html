@@ -1,13 +1,13 @@
 <div class="container">
 <div class="row">
  
-    <div *ngFor="let good of goods; index as i" class="col-3"> 
+    <div *ngFor="let good of goods;" class="col-3"> 
       <div class="card" style="width: 18rem;">
         <img [src]="good.imgUrl" class="card-img-top" alt="product image">
         <div class="card-body">
           <h5 class="card-title">{{good.name | titlecase}}</h5>
           <p class="card-text">{{good.price | currency}}</p>
-          <a  class="btn btn-primary" (click)="addToCart(i)">add to cart</a>
+          <a  class="btn btn-primary" (click)="addToCart(good.id)">add to cart</a>
         </div>
       </div>
     </div>
