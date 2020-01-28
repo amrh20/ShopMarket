@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AngularFireModule} from '@angular/fire'
 import { AngularFirestoreModule, FirestoreSettingsToken} from '@angular/fire/firestore';
-import { AngularFireAuthModule } from '@angular/fire/auth';
+
 import { AppComponent } from './app.component';
 import { CartComponent } from './components/cart/cart.component';
 import { GoodsComponent } from './components/goods/goods.component';
@@ -39,8 +39,7 @@ import { FormsModule }   from '@angular/forms';
       appId: "1:996016385260:web:8891ce6fe594b6cd7b49c9",
       measurementId: "G-RJWJNF00NL"
     }),
-    AngularFirestoreModule,
-    AngularFireAuthModule
+    AngularFirestoreModule
   ],
   providers: [
     { provide :FirestoreSettingsToken, useValue: {} }

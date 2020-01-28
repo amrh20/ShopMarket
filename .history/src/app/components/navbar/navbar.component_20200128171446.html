@@ -19,19 +19,19 @@
           <a class="nav-link"  routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"  routerLink="/cart" routerLinkActive="active" *ngIf="isUser">cart </a>
+          <a class="nav-link"  routerLink="/cart" routerLinkActive="active">cart </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/admin" routerLinkActive="active" *ngIf="isUser">Dashboard</a>
+          <a class="nav-link" routerLink="/admin" routerLinkActive="active">Dashboard</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"  routerLink="/login"routerLinkActive="active" *ngIf="!isUser"> Login</a>
+          <a class="nav-link"  routerLink="/login"routerLinkActive="active"> Login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/signup" routerLinkActive="active" *ngIf="!isUser">Signup</a>
+          <a class="nav-link" routerLink="/signup" routerLinkActive="active">Signup</a>
         </li>
         <li class="nav-item">
-          <button class="btn btn-danger" (click)="logout()" *ngIf="isUser">Logout</button>
+          <button class="btn btn-danger" (click)="logout()">Logout</button>
         </li>
         <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" 

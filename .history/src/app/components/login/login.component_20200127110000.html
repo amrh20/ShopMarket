@@ -1,10 +1,8 @@
 <div class="login">
-  <div class="container">
   <h2 class="text-center mt-3">
     log in
   </h2>
- 
-    <form #f="ngForm" (ngSubmit)="logIn(f)">
+  <div class="container">
     <input ngModel #email="ngModel" name="email" type="email" 
     class="form-control mt-4" placeholder="Email" required email>
     <div class="alert alert-danger mt-1" *ngIf="email.touched && email.errors?.required">email is required</div>
@@ -16,13 +14,8 @@
     *ngIf="password.touched && password.errors?.required">password is required</div>
     <div class="alert alert-danger mt-1" 
     *ngIf="password.touched && password.errors?.minlength">minlength should be 6 numbers</div>
-
-    <button 
-    class="btn btn-primary mt-4" 
-    [disabled]="f.invalid"
+    <button class="btn btn-primary mt-4" 
     >login</button>
-    </form>
- <div class="alert alert-danger mt-3" *ngIf="errorMessage">{{errorMessage}} ___ make sure that you have account ya 3m  ___</div>
   </div>
 
 
