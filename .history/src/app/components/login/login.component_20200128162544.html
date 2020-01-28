@@ -17,12 +17,9 @@
     <div class="alert alert-danger mt-1" 
     *ngIf="password.touched && password.errors?.minlength">minlength should be 6 numbers</div>
 
-    <button 
-    class="btn btn-primary mt-4" 
-    [disabled]="f.invalid"
+    <button class="btn btn-primary mt-4" [disabled]="f.invalid"
     >login</button>
     </form>
- <div class="alert alert-danger mt-3" *ngIf="errorMessage">{{errorMessage}} ___ make sure that you have account ya 3m  ___</div>
   </div>
 
 

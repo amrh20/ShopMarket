@@ -14,11 +14,7 @@ export class NavbarComponent implements OnInit {
   constructor(private authService:AuthService) { }
 
   ngOnInit() {
-    this.authService.user.subscribe(user=>{
-        if(user) this.isUser=true
-        else this.isUser=false
-      }
-       )
+    this.authService.user.subscribe(user=> console.log(user))
   }
   toggleNav() {
     this.isOpen= !this.isOpen;
